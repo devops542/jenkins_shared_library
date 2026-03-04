@@ -1,7 +1,7 @@
 def baseUrl = "https://github.com/devops542/"
-def repoName = "hello-world-docker"
+def repoName = "${reponame}"
 def gitRepoUrl = baseUrl + repoName + ".git"
-def jobName = repoName
+def jobName = "${reponame}"
 
 pipelineJob(jobName) {
 
